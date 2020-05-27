@@ -23,7 +23,7 @@
                                 <label for="">Contact Person</label>
                                 <input class="form-control" type="text" value="" v-model="configForm.contact_person">
                             </div>
-                            <button type="submit" class="btn btn-info waves-effect waves-light m-t-10">Save</button>
+                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">Save</button>
                         </form>
                     </div>
                 </div>

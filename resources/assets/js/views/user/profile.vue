@@ -51,7 +51,7 @@
                                 <label for="">Google Plus Profile</label>
                                 <input class="form-control" type="text" value="" v-model="profileForm.google_plus_profile">
                             </div>
-                            <button type="submit" class="btn btn-info waves-effect waves-light m-t-10">Update</button>
+                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">Update</button>
                         </form>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <h4 class="card-title">Upload Avatar</h4>
                         <div class="form-group text-center m-t-20">
                             <span id="fileselector">
-                                <label class="btn btn-info">
+                                <label class="btn btn-success">
                                     <input type="file"  @change="previewAvatar" id="avatarUpload" class="upload-button">
                                     <i class="fa fa-upload margin-correction"></i>Choose Avatar
                                 </label>

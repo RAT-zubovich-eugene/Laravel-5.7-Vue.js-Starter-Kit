@@ -1,6 +1,7 @@
 <template>
     <section id="wrapper">
-        <div class="login-register" style="background-image:url(/images/background/background.jpg);">
+        <div class="login-register" style="background-size: cover; background-image:url(/images/background/layout.svg);">
+            <div class="login-register" style="background-size: cover;background-image:url(/images/background/background.svg);">
             <div class="login-box card">
             <div class="card-body">
                 <h3 class="box-title m-b-20 text-center">Loging in...</h3>
@@ -12,6 +13,7 @@
             </div>
             <guest-footer></guest-footer>
           </div>
+        </div>
         </div>
 
     </section>

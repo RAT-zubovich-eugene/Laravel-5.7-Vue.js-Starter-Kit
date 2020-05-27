@@ -1,6 +1,7 @@
 <template>
     <section id="wrapper">
-        <div class="login-register" style="background-image:url(/images/background/background.jpg);">
+        <div class="login-register" style="background-size: cover; background-image:url(/images/background/layout.svg);">
+            <div class="login-register" style="background-size: cover;background-image:url(/images/background/background.svg);">
             <div class="login-box card">
             <div class="card-body">
                 <h3 class="box-title m-b-20 text-center">Reset Password</h3>
@@ -20,7 +21,7 @@
                         </div>
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
-                                <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Reset Password</button>
+                                <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Reset Password</button>
                             </div>
                         </div>
                     </form>
@@ -37,6 +38,7 @@
             </div>
             <guest-footer></guest-footer>
           </div>
+        </div>
         </div>
 
     </section>

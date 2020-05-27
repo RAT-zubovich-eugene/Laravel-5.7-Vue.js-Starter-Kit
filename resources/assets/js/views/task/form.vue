@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-info waves-effect waves-light m-t-10">
+        <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">
             <span v-if="id">Update</span>
             <span v-else>Save</span>
         </button>

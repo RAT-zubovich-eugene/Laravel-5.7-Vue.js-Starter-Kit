@@ -1,12 +1,12 @@
 <template>
     <div id="main-wrapper">
         <app-header></app-header>
-        <app-sidebar></app-sidebar>
+<!--        <app-sidebar></app-sidebar>-->
 
         <div class="page-wrapper">
-            <div class="container-fluid">
+            <div class="">
                 <router-view></router-view>
-                <app-right-sidebar></app-right-sidebar>
+<!--                <app-right-sidebar></app-right-sidebar>-->
             </div>
         	<app-footer></app-footer>
         </div>
@@ -18,8 +18,8 @@
     import AppHeader from './header.vue'
     import AppSidebar from './sidebar.vue'
     import AppFooter from './footer.vue'
-    import AppRightSidebar from './right-sidebar.vue'
-    import helper from '../services/helper'
+    // import AppRightSidebar from './right-sidebar.vue'
+    // import helper from '../services/helper'
     export default {
         methods : {
             notification(){
@@ -37,7 +37,7 @@
             }
         },
         components: {
-            AppHeader, AppSidebar, AppFooter, AppRightSidebar
+            AppHeader, AppSidebar, AppFooter
         },
         mounted() {
             $('body').addClass("fix-header fix-sidebar card-no-border");
@@ -59,7 +59,7 @@
             if(!this.getAuthUser('email')){
                 helper.authUser().then(response => {
                     this.$store.dispatch('setAuthUserDetail',{
-                        first_name: response.profile.first_name,
+                        // first_name: response.profile.first_name,
                         last_name: response.profile.last_name,
                         email: response.user.email,
                         avatar:response.profile.avatar

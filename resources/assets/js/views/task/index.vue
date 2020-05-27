@@ -96,7 +96,7 @@
                                         <td v-html="getTaskStatus(task)"></td>
                                         <td v-text="task.description"></td>
                                         <td>
-                                            <button class="btn btn-info btn-sm" @click.prevent="editTask(task)" data-toggle="tooltip" title="Edit Task"><i class="fa fa-pencil"></i></button>
+                                            <button class="btn btn-success btn-sm" @click.prevent="editTask(task)" data-toggle="tooltip" title="Edit Task"><i class="fa fa-pencil"></i></button>
                                             <button v-if="task.status" class="btn btn-danger btn-sm" @click.prevent="toggleTaskStatus(task)" data-toggle="tooltip" title="Mark as Incomplete"><i class="fa fa-times"></i></button>
                                             <button v-else class="btn btn-success btn-sm" @click.prevent="toggleTaskStatus(task)" data-toggle="tooltip" title="Mark as Complete"><i class="fa fa-check"></i></button>
                                             <click-confirm yes-class="btn btn-success" no-class="btn btn-danger">

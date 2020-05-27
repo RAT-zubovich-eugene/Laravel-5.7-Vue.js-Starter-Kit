@@ -15,14 +15,14 @@ let routes = [
                 path: '/home',
                 component: require('./views/pages/home')
             },
-            // {
-            //     path: '/blank',
-            //     component: require('./views/pages/blank')
-            // },
-            // {
-            //     path: '/configuration',
-            //     component: require('./views/configuration/configuration')
-            // },
+            {
+                path: '/blank',
+                component: require('./views/pages/blank')
+            },
+            {
+                path: '/configuration',
+                component: require('./views/configuration/configuration')
+            },
             {
                 path: '/profile',
                 component: require('./views/user/profile')
@@ -43,7 +43,6 @@ let routes = [
     },
     {
         path: '/',
-        // component: require('./views/pages/home'),
         component: require('./layouts/default-page'),
         meta: { requiresGuest: true },
         children: [
@@ -51,26 +50,26 @@ let routes = [
                 path: '/login',
                 component: require('./views/auth/login')
             },
-            // {
-            //     path: '/password',
-            //     component: require('./views/auth/password')
-            // },
+            {
+                path: '/password',
+                component: require('./views/auth/password')
+            },
             {
                 path: '/register',
                 component: require('./views/auth/register')
             },
-            // {
-            //     path: '/auth/:token/activate',
-            //     component: require('./views/auth/activate')
-            // },
-            // {
-            //     path: '/password/reset/:token',
-            //     component: require('./views/auth/reset')
-            // },
-            // {
-            //     path: '/auth/social',
-            //     component: require('./views/auth/social-auth')
-            // },
+            {
+                path: '/auth/:token/activate',
+                component: require('./views/auth/activate')
+            },
+            {
+                path: '/password/reset/:token',
+                component: require('./views/auth/reset')
+            },
+            {
+                path: '/auth/social',
+                component: require('./views/auth/social-auth')
+            },
         ]
     },
     {

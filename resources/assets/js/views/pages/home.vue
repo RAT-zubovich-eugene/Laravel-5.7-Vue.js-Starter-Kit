@@ -74,7 +74,7 @@
                                     <textarea placeholder="Add new todo here..." class="form-control b-0" v-model="todoForm.todo"></textarea>
                                 </div>
                                 <div class="col-4 text-right">
-                                    <button type="submit" class="btn btn-info btn-circle btn-lg"><i class="fa fa-plus"></i> </button>
+                                    <button type="submit" class="btn btn-success btn-circle btn-lg"><i class="fa fa-plus"></i> </button>
                                 </div>
                             </div>
                         </form>

@@ -1,10 +1,14 @@
 <template>
     <section id="wrapper">
-        <div class="login-register" style="background-image:url(/images/background/background.jpg);">
+        <div class="login-register" style="background-size: cover; background-image:url(/images/background/layout.svg);">
+            <div class="login-register" style="background-size: cover;background-image:url(/images/background/background.svg);">
             <div class="login-box card">
             <div class="card-body">
                 <form class="form-horizontal form-material" id="registerform" @submit.prevent="submit">
-                    <h3 class="box-title m-b-20">Sign Up</h3>
+                    <h3 class="box-title m-b-20">
+                        <router-link to="/login" class="text-info m-l-5"><b>Вход</b></router-link>
+                        <b class="text-success"> Регистрация </b>
+                    </h3>
                     <div class="form-group ">
                         <div class="col-xs-6">
                             <input type="text" name="first_name" class="form-control" placeholder="First Name" v-model="registerForm.first_name">
@@ -29,18 +33,19 @@
                     </div>
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Register</button>
+                            <button class="btn btn-success btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Регистрация</button>
                         </div>
                     </div>
-                    <div class="form-group m-b-0">
-                        <div class="col-sm-12 text-center">
-                            <p>Already have an account? <router-link to="/login" class="text-info m-l-5"><b>Sign In</b></router-link></p>
-                        </div>
-                    </div>
+<!--                    <div class="form-group m-b-0">-->
+<!--                        <div class="col-sm-12 text-center">-->
+<!--                            <p>Already have an account?</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </form>
             </div>
             <guest-footer></guest-footer>
           </div>
+        </div>
         </div>
 
     </section>

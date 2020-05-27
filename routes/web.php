@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/auth/social/{provider}', 'SocialAuthController@providerRedirect');
-Route::get('/auth/{provider}/callback', 'SocialAuthController@providerRedirectCallback');
+//Route::get('/auth/social/{provider}', 'SocialAuthController@providerRedirect');
+//Route::get('/auth/{provider}/callback', 'SocialAuthController@providerRedirectCallback');
 
 Route::get('/{vue?}', function () {
     return view('home');
